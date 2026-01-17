@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surveillance – LSP Kompeten Hipnotis Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="bg-gray-100">
+
+  <!-- NAVBAR (sama seperti halaman lain) -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <img src="assets/img/logo.png" alt="Logo LSP" class="h-12" />
+
+      <!-- Hamburger Menu Button (Android) -->
+      <button class="hamburger-btn md:hidden" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6 text-[15px] font-medium">
+        <a href="index.html" class="hover:text-blue-600">Beranda</a>
+        <a href="profil.html" class="hover:text-blue-600">Profil Kami</a>
+        <a href="pendaftaran.html" class="hover:text-blue-600">Pendaftaran</a>
+        <a href="faq.html" class="hover:text-blue-600">FAQ</a>
+        <a href="pengaduan.html" class="hover:text-blue-600">Pengaduan</a>
+        <a href="surveillance.html" class="text-blue-800 font-semibold">Surveillance</a>
+        <a href="login.html" class="bg-blue-800 text-white px-4 py-1.5 rounded-md hover:bg-blue-900">Login</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-nav">
+      <a href="index.html">Beranda</a>
+      <a href="profil.html">Profil Kami</a>
+      <a href="pendaftaran.html">Pendaftaran</a>
+      <a href="faq.html">FAQ</a>
+      <a href="pengaduan.html">Pengaduan</a>
+      <a href="surveillance.html" class="active">Surveillance</a>
+      <a href="login.html" class="bg-blue-800 text-white">Login</a>
+    </nav>
+  </header>
+
+  <!-- JUDUL HALAMAN -->
+  <section class="pt-32 pb-10 text-center">
+    <h1 class="text-4xl font-bold text-blue-800 mb-2">Formulir Surveillance Sertifikat</h1>
+    <p class="text-gray-600 text-[15px]">Silakan isi data di bawah ini untuk pemeliharaan sertifikasi kompetensi</p>
+  </section>
+
+  <!-- FORMULIR SURVEILLANCE -->
+  <section class="max-w-4xl mx-auto px-6 pb-20">
+    <form class="bg-white p-8 rounded-xl shadow-lg space-y-6">
+
+      <!-- Nama Lengkap -->
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Nama Lengkap *</label>
+        <input type="text" name="nama" required
+               class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none"
+               placeholder="Masukkan nama lengkap">
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Alamat Email</label>
+        <input type="email" name="email"
+               class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none"
+               placeholder="contoh@mail.com">
+      </div>
+
+      <!-- Nomor HP -->
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Nomor HP *</label>
+        <input type="text" name="hp" required
+               class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none"
+               placeholder="08xxxxxxxxxx">
+      </div>
+
+      <!-- Nomor KTP / NIK -->
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Nomor KTP / NIK *</label>
+        <input type="text" name="nik" required
+               class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none"
+               placeholder="Masukkan NIK">
+      </div>
+
+      <!-- Nomor Sertifikat -->
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Nomor Sertifikat *</label>
+        <input type="text" name="no_sertifikat" required
+               class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none"
+               placeholder="No. Sertifikat">
+      </div>
+
+      <!-- Registrasi Sertifikat -->
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Nomor Registrasi Sertifikat *</label>
+        <input type="text" name="reg_sertifikat" required
+               class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none"
+               placeholder="No. Registrasi Sertifikat">
+      </div>
+
+      <!-- Skema Kompetensi -->
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Skema Kompetensi *</label>
+        <select name="skema" required
+                class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none">
+          <option value="">— Pilih Skema —</option>
+          <option value="Skema-01">SKEMA SERTIFIKASI KLASTER HIPNOSIS (Skema-01/LSP.KHI)</option>
+          <option value="Skema-02">SKEMA SERTIFIKASI KLASTER HIPNOTERAPI (Skema-02/LSP.KHI)</option>
+        </select>
+      </div>
+
+      <!-- Sumber Dana Sertifikasi Kompetensi -->
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Sumber Dana Sertifikasi Kompetensi *</label>
+        <select name="sumber_dana" required
+                class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none">
+          <option value="">— Pilih Sumber Dana —</option>
+          <option value="APBN">Sumber anggaran dari APBN</option>
+          <option value="APBD">Sumber anggaran dari APBD</option>
+          <option value="Perusahaan">Biaya dari perusahaan</option>
+          <option value="Mandiri">Biaya mandiri</option>
+        </select>
+      </div>
+
+      <!-- Tempat Kerja / Instansi -->
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Nama Perusahaan / Instansi</label>
+        <input type="text" name="instansi_nama"
+               class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none"
+               placeholder="Nama perusahaan / instansi (jika ada)">
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Alamat Instansi / Tempat Kerja</label>
+        <input type="text" name="instansi_alamat"
+               class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none"
+               placeholder="Alamat instansi / tempat kerja">
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Jabatan (di tempat kerja)</label>
+        <input type="text" name="jabatan"
+               class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none"
+               placeholder="Jabatan Anda">
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Proyek / Pekerjaan Saat Ini</label>
+        <input type="text" name="proyek" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none" placeholder="Proyek / pekerjaan saat ini">
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Jabatan dalam Proyek</label>
+        <input type="text" name="jabatan_proyek" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none" placeholder="Jabatan dalam proyek">
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2 text-gray-700">Apakah pekerjaan sesuai dengan kompetensi (SKK)? *</label>
+        <select name="sesuai_skk" required
+                class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none">
+          <option value="">— Pilih —</option>
+          <option value="Sesuai">Sesuai</option>
+          <option value="Tidak Sesuai">Tidak Sesuai</option>
+          <option value="Lainnya">Lainnya</option>
+        </select>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="w-full bg-blue-800 text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition">
+        Kirim Formulir
+      </button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-gray-200 text-center p-6">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-4">
+        <p>LSP Kompeten Hipnotis Indonesia</p>
+        <p>Jl. Cikini Raya No. 71, Menteng — Jakarta Pusat</p>
+        <p>Email: info@lsphipnotis.id | Tel / WA: 0896-6193-90000</p>
+      </div>
+      <p>© 2025 LSP Kompeten Hipnotis Indonesia. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script> 
+
+</body>
+</html>

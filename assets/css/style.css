@@ -1,0 +1,430 @@
+/* =============================
+   GLOBAL STYLING
+============================= */
+
+/* Gunakan font default agar konsisten */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Smooth scrolling untuk Android */
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Menghindari konten tertutup navbar fixed */
+.mt-navbar {
+  margin-top: 90px;
+}
+
+/* Safe area untuk Android modern (notch/punch hole) */
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Disable text selection pada elemen interaktif */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* =============================
+   NAVBAR
+============================= */
+header {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Logo agar tidak stretch */
+header img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navbar link hover */
+.nav-link {
+  transition: 0.2s;
+}
+
+/* =============================
+   HAMBURGER MENU (ANDROID)
+============================= */
+
+/* Hamburger button */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 60;
+}
+
+.hamburger-btn span {
+  width: 30px;
+  height: 3px;
+  background: #1e40af;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Hamburger animation saat aktif */
+.hamburger-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 50;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-nav.show {
+  max-height: 500px;
+  display: block;
+}
+
+.mobile-nav a {
+  display: block;
+  padding: 16px 24px;
+  color: #1e40af;
+  font-weight: 500;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background 0.2s;
+}
+
+.mobile-nav a:hover,
+.mobile-nav a:active {
+  background: #f3f4f6;
+}
+
+.mobile-nav a.active {
+  background: #dbeafe;
+  font-weight: 700;
+}
+
+/* =============================
+   HERO SECTION
+============================= */
+
+.hero-overlay {
+  background: rgba(0,0,0,0.55) !important;
+}
+
+/* Hero section responsif untuk Android */
+.hero-section {
+  min-height: 400px;
+  background-attachment: scroll; /* Lebih baik untuk mobile */
+}
+
+/* =============================
+   CONTENT WRAPPER
+============================= */
+
+.content-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Garis bawah judul */
+.content-title {
+  border-left: 4px solid #1e40af;
+  padding-left: 12px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* =============================
+   FORM STYLING
+============================= */
+
+.form-input {
+  border: 1px solid #d1d5db;
+  padding: 10px 14px;
+  border-radius: 6px;
+  width: 100%;
+  transition: 0.2s;
+  font-size: 16px; /* Prevent zoom on iOS/Android */
+}
+
+.form-input:focus {
+  border-color: #1e40af;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(30, 64, 175, 0.2);
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Tombol utama - Touch friendly */
+.btn-primary {
+  background: #1e40af;
+  color: white;
+  padding: 12px 20px; /* Lebih besar untuk touch */
+  border-radius: 6px;
+  transition: 0.2s;
+  display: inline-block;
+  min-height: 44px; /* Apple's recommended touch target */
+  min-width: 44px;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background: #1e3a8a;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Select dropdown untuk Android */
+select {
+  font-size: 16px; /* Prevent zoom */
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%231e40af' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+
+/* =============================
+   FAQ PAGE
+============================= */
+
+.faq-item {
+  background: white;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.faq-item:hover {
+  background: #f8fafc;
+}
+
+.faq-question {
+  font-weight: 700;
+  font-size: 17px;
+  color: #1e3a8a;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  color: #444;
+  line-height: 1.6;
+  padding-left: 5px;
+}
+
+/* FAQ opened */
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* =============================
+   FOOTER
+============================= */
+
+footer {
+  line-height: 1.5;
+}
+
+footer p {
+  margin-bottom: 4px;
+}
+
+/* =============================
+   MOBILE FIXES (ANDROID)
+============================= */
+
+@media (max-width: 768px) {
+  /* Tampilkan hamburger menu */
+  .hamburger-btn {
+    display: flex;
+  }
+
+  /* Logo lebih kecil di mobile */
+  header img {
+    height: 40px;
+  }
+
+  /* Padding konten */
+  .content-box {
+    padding: 16px;
+  }
+
+  /* Hero section lebih pendek di mobile */
+  .hero-section {
+    min-height: 300px !important;
+    height: 50vh !important;
+  }
+
+  /* Typography responsif */
+  h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  h3 {
+    font-size: 1.25rem !important;
+  }
+
+  /* Card spacing */
+  .content-box,
+  .faq-item {
+    margin-bottom: 12px;
+  }
+
+  /* Form inputs lebih besar untuk touch */
+  input, select, textarea {
+    padding: 14px !important;
+    font-size: 16px !important;
+  }
+
+  /* Button full width di mobile */
+  button[type="submit"],
+  .btn-primary {
+    width: 100%;
+    padding: 14px 20px;
+  }
+
+  /* Footer text lebih kecil */
+  footer {
+    font-size: 14px;
+    padding: 20px 16px;
+  }
+
+  /* Spacing untuk section */
+  section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Grid cards jadi 1 kolom */
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Navbar padding */
+  header .max-w-7xl {
+    padding: 12px 16px;
+  }
+}
+
+/* Extra small devices (phones < 375px) */
+@media (max-width: 375px) {
+  header img {
+    height: 35px;
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .content-box {
+    padding: 12px;
+  }
+
+  /* Hero section lebih pendek lagi */
+  .hero-section {
+    min-height: 250px !important;
+    height: 40vh !important;
+  }
+}
+
+/* Landscape mode di Android */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-section {
+    height: 80vh !important;
+  }
+
+  .mobile-nav {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}
+
+/* =============================
+   TOUCH IMPROVEMENTS
+============================= */
+
+/* Larger touch targets untuk Android */
+@media (max-width: 768px) {
+  a, button {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* FAQ items lebih mudah di-tap */
+  .faq-item {
+    padding: 18px 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Card hover effect di-disable di touch devices */
+  .faq-item:hover {
+    background: white;
+  }
+
+  .faq-item:active {
+    background: #f8fafc;
+  }
+}
+
+/* =============================
+   ANDROID SPECIFIC FIXES
+============================= */
+
+/* Fix untuk Android Chrome */
+@supports (-webkit-touch-callout: none) {
+  input, select, textarea {
+    font-size: 16px !important; /* Prevent zoom */
+  }
+}
+
+/* Smooth scroll untuk Android */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

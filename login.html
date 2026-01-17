@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login – LSP Kompeten Hipnotis Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="bg-gray-100">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <img src="assets/img/logo.png" alt="Logo LSP" class="h-12" />
+
+      <nav class="hidden md:flex space-x-6 text-[15px] font-medium">
+        <a href="index.html" class="hover:text-blue-600">Beranda</a>
+        <a href="profil.html" class="hover:text-blue-600">Profil Kami</a>
+        <a href="pendaftaran.html" class="hover:text-blue-600">Pendaftaran</a>
+        <a href="faq.html" class="hover:text-blue-600">FAQ</a>
+        <a href="pengaduan.html" class="hover:text-blue-600">Pengaduan</a>
+        <a href="surveillance.html" class="hover:text-blue-600">Surveillance</a>
+        <a href="login.html" class="text-blue-800 font-semibold">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- FORM LOGIN -->
+  <section class="pt-36 pb-20 px-6">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+
+      <h2 class="text-3xl font-bold text-center text-blue-800 mb-6">Login</h2>
+
+      <form action="#" method="POST" class="space-y-6">
+
+        <!-- Email -->
+        <div>
+          <label class="block font-medium mb-2 text-gray-700">Email</label>
+          <input 
+            type="email" 
+            name="email" 
+            required
+            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-800 focus:outline-none"
+            placeholder="Masukkan email">
+        </div>
+
+        <!-- Password -->
+        <div>
+          <label class="block font-medium mb-2 text-gray-700">Password</label>
+          <input 
+            type="password" 
+            name="password" 
+            required
+            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-800 focus:outline-none"
+            placeholder="Masukkan password">
+        </div>
+
+        <!-- Tombol Login -->
+        <button 
+          type="submit" 
+          class="w-full bg-blue-800 text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition">
+          Login
+        </button>
+
+      </form>
+
+      <!-- Link Tambahan -->
+      <div class="text-center mt-6 text-[14px] text-gray-600">
+        <p>
+          Belum memiliki akun? 
+          <a href="pendaftaran.html" class="text-blue-700 hover:underline font-medium">
+            Daftar di sini
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-gray-200 text-center p-6 mt-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-4">
+        <p>LSP Kompeten Hipnotis Indonesia</p>
+        <p>Jl. Cikini Raya No. 71, Menteng — Jakarta Pusat</p>
+        <p>Email: info@lsphipnotis.id | Tel / WA: 0896-6193-90000</p>
+      </div>
+      <p>© 2025 LSP Kompeten Hipnotis Indonesia. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengaduan – LSP Kompeten Hipnotis Indonesia</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <img src="assets/img/logo.png" alt="Logo LSP" class="h-12" />
+
+      <nav class="hidden md:flex space-x-6 text-[15px] font-medium">
+        <a href="index.html" class="hover:text-blue-600">Beranda</a>
+        <a href="profil.html" class="hover:text-blue-600">Profil Kami</a>
+        <a href="pendaftaran.html" class="hover:text-blue-600">Pendaftaran</a>
+        <a href="faq.html" class="hover:text-blue-600">FAQ</a>
+        <a href="pengaduan.html" class="text-blue-800 font-semibold">Pengaduan</a>
+        <a href="surveillance.html" class="hover:text-blue-600">Surveillance</a>
+        <a href="login.html" class="bg-blue-800 text-white px-4 py-1.5 rounded-md hover:bg-blue-900">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE TITLE -->
+  <section class="pt-32 pb-10 text-center">
+    <h1 class="text-4xl font-bold text-blue-800 mb-2">Formulir Pengaduan</h1>
+    <p class="text-gray-600 text-[15px]">Laporkan keluhan atau pengaduan terkait layanan sertifikasi</p>
+  </section>
+
+  <!-- FORM PENGADUAN -->
+  <section class="max-w-3xl mx-auto px-6 pb-20">
+
+    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+
+      <form>
+
+        <!-- Nama -->
+        <div class="mb-6">
+          <label class="block font-medium mb-2 text-gray-700">Nama Lengkap</label>
+          <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none" placeholder="Masukkan nama Anda">
+        </div>
+
+        <!-- Email -->
+        <div class="mb-6">
+          <label class="block font-medium mb-2 text-gray-700">Email</label>
+          <input type="email" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none" placeholder="contoh: email@domain.com">
+        </div>
+
+        <!-- Telepon -->
+        <div class="mb-6">
+          <label class="block font-medium mb-2 text-gray-700">Nomor Telepon / WhatsApp</label>
+          <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none" placeholder="08xxxxxxxxxx">
+        </div>
+
+        <!-- Jenis Pengaduan -->
+        <div class="mb-6">
+          <label class="block font-medium mb-2 text-gray-700">Kategori Pengaduan</label>
+          <select class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-800 focus:outline-none">
+            <option>Pilih kategori</option>
+            <option>Pelayanan Asesor</option>
+            <option>Pelayanan Administrasi</option>
+            <option>Tempat Uji Kompetensi (TUK)</option>
+            <option>Sistem atau Website</option>
+            <option>Lainnya</option>
+          </select>
+        </div>
+
+        <!-- Isi Pengaduan -->
+        <div class="mb-6">
+          <label class="block font-medium mb-2 text-gray-700">Isi Pengaduan</label>
+          <textarea class="w-full border border-gray-300 rounded-lg p-3 h-32 focus:ring-2 focus:ring-blue-800 focus:outline-none" placeholder="Jelaskan pengaduan Anda secara rinci..."></textarea>
+        </div>
+
+        <!-- Tombol Submit -->
+        <button type="submit" class="w-full bg-blue-800 text-white py-3 rounded-lg font-semibold hover:bg-blue-900 transition">
+          Kirim Pengaduan
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-gray-200 text-center p-6">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-4">
+        <p>LSP Kompeten Hipnotis Indonesia</p>
+        <p>Jl. Cikini Raya No. 71, Menteng — Jakarta Pusat</p>
+        <p>Email: info@lsphipnotis.id | Tel / WA: 0896-6193-90000</p>
+      </div>
+      <p>© 2025 LSP Kompeten Hipnotis Indonesia. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>

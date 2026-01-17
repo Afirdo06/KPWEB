@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran – LSP Kompeten Hipnotis Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="bg-gray-100">
+
+  <!-- NAVBAR (SAMA DENGAN INDEX) -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <img src="assets/img/logo.png" alt="Logo LSP" class="h-12" />
+
+      <!-- Hamburger Menu Button (Android) -->
+      <button class="hamburger-btn md:hidden" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6 text-[15px] font-medium">
+        <a href="index.html" class="hover:text-blue-600">Beranda</a>
+        <a href="profil.html" class="hover:text-blue-600">Profil Kami</a>
+        <a href="pendaftaran.html" class="text-blue-800 font-semibold">Pendaftaran</a>
+        <a href="faq.html" class="hover:text-blue-600">FAQ</a>
+        <a href="pengaduan.html" class="hover:text-blue-600">Pengaduan</a>
+        <a href="surveillance.html" class="hover:text-blue-600">Surveillance</a>
+        <a href="login.html" class="bg-blue-800 text-white px-4 py-1.5 rounded-md hover:bg-blue-900">Login</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-nav">
+      <a href="index.html">Beranda</a>
+      <a href="profil.html">Profil Kami</a>
+      <a href="pendaftaran.html" class="active">Pendaftaran</a>
+      <a href="faq.html">FAQ</a>
+      <a href="pengaduan.html">Pengaduan</a>
+      <a href="surveillance.html">Surveillance</a>
+      <a href="login.html" class="bg-blue-800 text-white">Login</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section 
+    class="h-[45vh] bg-cover bg-center flex items-center justify-center text-white relative"
+    style="background-image: url('assets/img/hero-bg.jpg'); margin-top: 75px;">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 text-center px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-3">Pendaftaran Sertifikasi</h1>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto">Silakan pilih jenis pendaftaran sesuai kebutuhan Anda.</p>
+    </div>
+  </section>
+
+  <!-- KONTEN FORM PENDAFTARAN -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+
+    <h2 class="text-3xl font-bold text-blue-800 mb-8">Formulir Pendaftaran</h2>
+
+    <form class="bg-white p-8 rounded-xl shadow-md space-y-6">
+      <div>
+        <label class="block font-medium mb-1">Nama Lengkap</label>
+        <input type="text" class="w-full border-gray-300 rounded-md p-3 border" placeholder="Masukkan nama lengkap">
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Email</label>
+        <input type="email" class="w-full border-gray-300 rounded-md p-3 border" placeholder="example@mail.com">
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Nomor WA</label>
+        <input type="text" class="w-full border-gray-300 rounded-md p-3 border" placeholder="08xxxxxxxxxx">
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Pilih Skema Sertifikasi</label>
+        <select class="w-full border-gray-300 rounded-md p-3 border">
+          <option>— Pilih Skema —</option>
+          <option>Skema Hipnosis</option>
+          <option>Skema Hipnoterapi</option>
+          <option>Asesor</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Upload Dokumen Pendukung</label>
+        <input type="file" class="w-full border-gray-300 rounded-md p-3 border">
+      </div>
+
+      <button class="bg-blue-800 text-white px-6 py-3 rounded-md hover:bg-blue-900 w-full font-semibold">Kirim Pendaftaran</button>
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-gray-200 text-center p-6 mt-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-4">
+        <p>LSP Kompeten Hipnotis Indonesia</p>
+        <p>Jl. Cikini Raya No. 71, Menteng — Jakarta Pusat</p>
+        <p>Email: info@lsphipnotis.id | Tel / WA: 0896-6193-90000</p>
+      </div>
+      <p>© 2025 LSP Kompeten Hipnotis Indonesia. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
